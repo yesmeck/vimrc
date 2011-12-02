@@ -29,4 +29,4 @@ set guioptions-=T
 set guioptions+=b
 
 set background=dark
-colorscheme solarized
+"colorscheme solarized
