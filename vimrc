@@ -32,7 +32,7 @@ set ignorecase              "Case Insensitive Searching
 set smartcase               "Lowercase = case insensitive, any uppercase = case sensitive
 set hlsearch                "Highlight all search results
 "Following line clears the search highlights when pressing Lb
-nnoremap <leader>b :nohlsearch<CR>
+"nnoremap <leader>b :nohlsearch<CR>
 " http://www.vim.org/scripts/script.php?script_id=2572
 noremap <leader>a :Ack 
 
