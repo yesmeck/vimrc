@@ -18,6 +18,7 @@ set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
 "------  Behavior  ------
 set tabstop=4               "tab = 4 spaces
 set shiftwidth=4            "Indent to four spaces
+set softtabstop=4
 set hidden                  "Switch between unsaved buffers w/o needing to save, preserves history
 filetype indent on          "Syntax Highlight
 filetype plugin on          "Needed for snipMate
