@@ -132,10 +132,6 @@ noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
-" supertab
-let g:SuperTabMappingForward = '<s-tab>'
-let g:SuperTabMappingBackward = '<tab>'
-
 " file syntax
 function s:setupWrapping()
     set wrap
