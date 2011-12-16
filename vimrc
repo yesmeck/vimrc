@@ -136,6 +136,30 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 let g:SuperTabMappingForward = '<s-tab>'
 let g:SuperTabMappingBackward = '<tab>'
 
+" file syntax
+function s:setupWrapping()
+    set wrap
+    set wrapmargin=2
+    set textwidth=72
+endfunction
+
+function s:setupMarkup()
+    set ft=markdown
+    call s:setupWrapping()
+"  map <buffer> <Leader>p :Hammer<CR>
+endfunction
+
+" Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
+
+" md, markdown, and mk are markdown and define buffer-local preview
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+
+" add json syntax highlighting
+au BufNewFile,BufRead *.json set ft=javascript
+
+au BufRead,BufNewFile *.txt call s:setupWrapping()
+
 if has("gui_running")
     set cursorline                  "Highlight background of current line
     autocmd VimEnter * NERDTree     "run nerdtree
