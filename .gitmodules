@@ -34,3 +34,6 @@
 [submodule "bundle/bclose"]
 	path = bundle/bclose
 	url = https://github.com/bcaccinolo/bclose.git
+[submodule "bundle/buftabs"]
+	path = bundle/buftabs
+	url = https://github.com/vim-scripts/buftabs.git
