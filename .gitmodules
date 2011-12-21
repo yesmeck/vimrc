@@ -49,3 +49,6 @@
 [submodule "bundle/session"]
 	path = bundle/session
 	url = https://github.com/xolox/vim-session.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
