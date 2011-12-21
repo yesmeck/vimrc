@@ -160,7 +160,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 if has("gui_running")
     set cursorline                  "Highlight background of current line
     autocmd VimEnter * NERDTree     "run nerdtree
-    autocmd VimEnter * TagbarOpen
+    "autocmd VimEnter * TagbarOpen  "run taglist
     "autocmd VimEnter * wincmd p    "cursor to right panel instead of NERDTree
     colorscheme ir_black            "Cool color scheme
 
