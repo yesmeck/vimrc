@@ -42,7 +42,7 @@ noremap <leader>a :Ack
 let NERDTreeIgnore=['CVS']
 let NERDTreeChDirMode=2     "setting root dir in NT also sets VIM's cd
 let NERDTreeShowHidden=1
-noremap <silent> <Leader>n :NERDTreeToggle<CR>
+noremap <silent> <F3> :NERDTreeToggle<CR>
 
 "------  Tagbar Options  ------
 " http://adamyoung.net/Exuberant-Ctags-OS-X
@@ -161,6 +161,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 if has("gui_running")
     set cursorline                  "Highlight background of current line
     autocmd VimEnter * NERDTree     "run nerdtree
+    autocmd BufEnter * NERDTreeMirror "Mirror NERDTree when open file
     "autocmd VimEnter * TagbarOpen  "run taglist
     "autocmd VimEnter * wincmd p    "cursor to right panel instead of NERDTree
     colorscheme ir_black            "Cool color scheme
