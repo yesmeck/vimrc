@@ -55,3 +55,6 @@
 [submodule "bundle/perdirvimrc"]
 	path = bundle/perdirvimrc
 	url = https://github.com/yesmeck/perdirvimrc--Autoload-vimrc-files-per-di.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
