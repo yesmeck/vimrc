@@ -40,9 +40,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/php-doc"]
-	path = bundle/php-doc
-	url = https://github.com/vim-scripts/php-doc.git
 [submodule "bundle/session"]
 	path = bundle/session
 	url = https://github.com/xolox/vim-session.git
@@ -58,3 +55,6 @@
 [submodule "bundle/vim-indent-guides"]
 	path = bundle/vim-indent-guides
 	url = git://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/PDV-revised"]
+	path = bundle/PDV-revised
+	url = https://github.com/yesmeck/PDV-revised.git
