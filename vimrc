@@ -1,3 +1,4 @@
+runtime bundle/pathogen/autoload/pathogen.vim   "Set runtime
 call pathogen#infect()      "Executes the pathogen plugin, which loads other plugins
 let mapleader=","           "Changes Leader key into a comma instead of a backslash
 set nocompatible            "Prefents VIM from being nerfed into acting like VI
