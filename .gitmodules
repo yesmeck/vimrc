@@ -55,3 +55,6 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
+[submodule "bundle/perdirvimrc"]
+	path = bundle/perdirvimrc
+	url = https://github.com/vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di.git
