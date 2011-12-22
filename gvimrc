@@ -28,5 +28,7 @@ set guioptions-=T
 " 水平滚动条
 set guioptions+=b
 
+set colorcolumn=80
+
 set background=dark
 colorscheme solarized
