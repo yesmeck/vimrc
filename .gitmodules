@@ -61,3 +61,6 @@
 [submodule "bundle/BufOnly"]
 	path = bundle/BufOnly
 	url = https://github.com/vim-scripts/BufOnly.vim.git
+[submodule "bundle/VimDebugger"]
+	path = bundle/VimDebugger
+	url = https://github.com/taxilian/VimDebugger.git
