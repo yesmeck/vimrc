@@ -137,29 +137,20 @@ noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
 vnoremap <C-P> :call PhpDocRange()<CR>
 
+" Hammer
+" xdg_open does not work
+:let g:HammerBrowser = 'firefox'
+
 :let g:pdv_cfg_Version=""
 :let g:pdv_cfg_Author="Meck <yesmeck@gmail.com>"
 :let g:pdv_cfg_Copyright="2011 Meck"
 :let g:pdv_cfg_License=""
 
-" file syntax
-function s:setupWrapping()
-    set wrap
-    set wrapmargin=2
-    set textwidth=72
-endfunction
-
-function s:setupMarkup()
-    set ft=markdown
-    call s:setupWrapping()
-"  map <buffer> <Leader>p :Hammer<CR>
-endfunction
-
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
-au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} call s:setupMarkup()
+au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
