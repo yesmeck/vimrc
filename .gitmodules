@@ -67,3 +67,9 @@
 [submodule "bundle/hammer"]
 	path = bundle/hammer
 	url = https://github.com/robgleeson/hammer.vim.git
+[submodule "bundle/Color-Sampler-Pack"]
+	path = bundle/Color-Sampler-Pack
+	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
+[submodule "bundle/ScrollColors"]
+	path = bundle/ScrollColors
+	url = https://github.com/vim-scripts/ScrollColors.git
