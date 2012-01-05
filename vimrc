@@ -26,7 +26,7 @@ filetype plugin on          "Needed for snipMate
 set autoindent              "Autoindent
 set expandtab               "Use spaces instead of tabs
 "Indent guide
-autocmd VimEnter * IndentGuidesEnable
+let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_guide_size=1
 "Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
