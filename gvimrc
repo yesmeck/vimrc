@@ -32,4 +32,4 @@ set guioptions+=b
 set colorcolumn=80
 
 set background=dark
-colorscheme ir_black
+colorscheme tir_black
