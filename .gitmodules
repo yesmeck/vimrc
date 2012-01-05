@@ -70,6 +70,3 @@
 [submodule "bundle/ScrollColors"]
 	path = bundle/ScrollColors
 	url = https://github.com/vim-scripts/ScrollColors.git
-[submodule "bundle/perdirvimrc"]
-	path = bundle/perdirvimrc
-	url = https://github.com/vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di.git
