@@ -146,6 +146,9 @@ vnoremap <C-P> :call PhpDocRange()<CR>
 :let g:pdv_cfg_Copyright="2011 Meck"
 :let g:pdv_cfg_License=""
 
+" localvimrc
+let g:localvimrc_ask=0
+
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 
