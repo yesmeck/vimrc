@@ -108,7 +108,7 @@ map <Leader>ss :SaveSession
 " When pressing <leader>cd switch to the directory of the open buffer
 "map <Leader>cd :cd %:p:h<CR>
 " ,ct = Builds ctags
-map <Leader>ct :! /usr/local/bin/ctags -R *<CR>
+map <Leader>ct :! ctags -R *<CR>
 
 " ,v = Paste
 map <Leader>v "+gP
@@ -157,8 +157,6 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
-
-au BufRead,BufNewFile *.txt call s:setupWrapping()
 
 if has("gui_running")
     set cursorline                  "Highlight background of current line
