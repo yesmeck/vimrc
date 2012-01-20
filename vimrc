@@ -161,7 +161,7 @@ au BufNewFile,BufRead *.json set ft=javascript
 if has("gui_running")
     set cursorline                  "Highlight background of current line
     autocmd VimEnter * NERDTree     "run nerdtree
-    autocmd BufEnter * NERDTreeMirror "Mirror NERDTree when open file
+    "autocmd BufEnter * NERDTreeMirror "Mirror NERDTree when open file
     "autocmd VimEnter * TagbarOpen  "run taglist
     "autocmd VimEnter * wincmd p    "cursor to right panel instead of NERDTree
     colorscheme ir_black            "Cool color scheme
