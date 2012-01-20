@@ -21,6 +21,14 @@ endif
 set encoding=utf8
 set langmenu=zh_CN.UTF-8
 set imcmdline
+set cursorline                  "Highlight background of current line
+
+" Show tabs and newline characters with ,s
+nmap <Leader>s :set list!<CR>
+set listchars=tab:▸\ ,eol:¬
+"Invisible character colors
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
 
 " 隐藏工具栏
 set guioptions-=T

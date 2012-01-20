@@ -38,21 +38,6 @@ set smartcase               "Lowercase = case insensitive, any uppercase = case 
 set hlsearch                "Highlight all search results
 "Following line clears the search highlights when pressing Lb
 "nnoremap <leader>b :nohlsearch<CR>
-" http://www.vim.org/scripts/script.php?script_id=2572
-noremap <leader>a :Ack 
-
-"------  NERDTree Options  ------
-let NERDTreeIgnore=['CVS']
-let NERDTreeChDirMode=2     "setting root dir in NT also sets VIM's cd
-let NERDTreeShowHidden=1
-noremap <silent> <F3> :NERDTreeToggle<CR>
-
-"------  Tagbar Options  ------
-" http://adamyoung.net/Exuberant-Ctags-OS-X
-" http://www.vim.org/scripts/script.php?script_id=273
-let g:tagbar_ctags_bin='/usr/bin/ctags'
-let g:tagbar_width=26
-noremap <silent> <Leader>y :TagbarToggle<CR>
 
 "------  Buffers  ------
 " Ctrl Left & Right move between buffers
@@ -65,18 +50,6 @@ noremap <silent> <C-l> :bnext<CR>
 nnoremap <silent> <Leader>q :Bclose<CR>
 " Closes the current window
 nnoremap <silent> <Leader>Q <C-w>c
-
-"------  Fugitive  ------ 
-"https://github.com/tpope/vim-fugitive
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gr :Gremove<CR>
-nnoremap <Leader>gl :Glog<CR>
-nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gm :Gmove 
-nnoremap <Leader>gp :Ggrep 
-nnoremap <Leader>gR :Gread<CR>
-nnoremap <Leader>gg :Git 
-nnoremap <Leader>gd :Gdiff<CR>
 
 "------  Moving Between Windows  ------
 nnoremap <Leader>h <C-w>h
@@ -98,12 +71,6 @@ map <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
 " Edit and Reload .vimrc files
 nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
-
-"http://www.vim.org/scripts/script.php?script_id=3150
-map <Leader>os :OpenSession 
-map <Leader>so :OpenSession 
-map <Leader>ss :SaveSession 
-:let g:session_autosave = 'no'
 
 " When pressing <leader>cd switch to the directory of the open buffer
 "map <Leader>cd :cd %:p:h<CR>
@@ -128,26 +95,9 @@ map <Leader>p :! php -l %<CR>
 map <Leader>P :! php -q %<CR>
 
 " Deletes trailing space in file upon write
-" autocmd BufWritePre * :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 map <Leader>? :Helptags<CR>
-
-" php-doc plugin
-noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>
-
-" Hammer
-" xdg_open does not work
-:let g:HammerBrowser = 'firefox'
-
-:let g:pdv_cfg_Version=""
-:let g:pdv_cfg_Author="Meck <yesmeck@gmail.com>"
-:let g:pdv_cfg_Copyright="2011 Meck"
-:let g:pdv_cfg_License=""
-
-" localvimrc
-let g:localvimrc_ask=0
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
@@ -158,32 +108,7 @@ au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 " add json syntax highlighting
 au BufNewFile,BufRead *.json set ft=javascript
 
-if has("gui_running")
-    set cursorline                  "Highlight background of current line
-    autocmd VimEnter * NERDTree     "run nerdtree
-    "autocmd BufEnter * NERDTreeMirror "Mirror NERDTree when open file
-    "autocmd VimEnter * TagbarOpen  "run taglist
-    "autocmd VimEnter * wincmd p    "cursor to right panel instead of NERDTree
-    colorscheme ir_black            "Cool color scheme
-
-    " Show tabs and newline characters with ,s
-    nmap <Leader>s :set list!<CR>
-    set listchars=tab:▸\ ,eol:¬
-    "Invisible character colors
-    highlight NonText guifg=#4a4a59
-    highlight SpecialKey guifg=#4a4a59
-else
-    colorscheme darkblue        "Default VIM colorscheme which works in terminals
-endif
-
-if has("gui_macvim") "Use Experimental Renderer option must be enabled for transparencY
-    set transparency=15
-    set guifont=Monaco:h10
-    set noantialias " I like my Monaco this way ;D
-    " Swipe to move between bufers :D
-    map <SwipeLeft> :bprev<CR>
-    map <SwipeRight> :bnext<CR>
-endif
+colorscheme darkblue        "Default VIM colorscheme which works in terminals
 
 if filereadable($HOME.'/.vimrc_local')
     source $HOME/.vimrc_local
