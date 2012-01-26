@@ -1,0 +1,34 @@
+#################################
+# copy from https://github.com/carlhuda/janus/blob/master/bootstrap.sh
+
+function die()
+{
+    echo "${@}"
+    exit 1
+}
+
+# Add <strong>.old</strong> to any existing Vim file in the home directory
+for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
+  if [[ ( -e $i ) || ( -h $i ) ]]; then
+    echo "${i} has been renamed to ${i}.old"
+    mv "${i}" "${i}.old" || die "Could not move ${i} to ${i}.old"
+  fi
+done
+#################################
+
+git clone git@github.com:yesmeck/vimrc.git $HOME/.vim \
+    || die "Could not clone the repository to ${HOME}/.vim"
+
+echo "Link vim configuration files"
+ln -s $HOME/.vim/vimrc $HOME/.vimrc
+ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
+
+echo "Update subomdules"
+cd $HOME/.vim && git submodule init && git submodule update
+
+echo "Install command-t"
+cd $HOME/.vim/bundle/command-t/ruby/command-t/
+ruby extconf.rb
+make
+
+echo "Install successfully."
