@@ -13,11 +13,6 @@
 " http://www.cs.cmu.edu/~maverick/VimColorSchemeTest/ has examples and
 " downloads for the colorschemes on vim.org
 
-" Source a global configuration file if available
-if filereadable("/etc/vim/gvimrc.local")
-  source /etc/vim/gvimrc.local
-endif
-
 set encoding=utf8
 set langmenu=zh_CN.UTF-8
 set imcmdline
@@ -41,3 +36,9 @@ set colorcolumn=80
 
 set background=dark
 colorscheme tir_black
+
+" Source a global configuration file if available
+if filereadable($HOME.'/.gvimrc_local')
+  source $HOME/.gvimrc_local
+endif
+
