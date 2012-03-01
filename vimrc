@@ -89,8 +89,6 @@ map <Leader>T :%s/\s\+$//<CR>
 map <Leader>U :g/^$/d<CR>
 " ,R = Converts tabs to spaces in document
 map <Leader>R :retab<CR>
-" .p = Runs PHP lint checker on current file
-map <Leader>P :! php -l %<CR>
 
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
