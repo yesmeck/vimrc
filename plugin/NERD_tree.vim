@@ -5,5 +5,5 @@ let NERDTreeShowHidden=1
 noremap <silent> <F3> :NERDTreeToggle<CR>
 
 if has("gui_running")
-    autocmd VimEnter * NERDTree     "run nerdtree
+    autocmd vimenter * if !argc() | NERDTree | endif
 endif
