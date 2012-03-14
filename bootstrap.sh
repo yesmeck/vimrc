@@ -31,4 +31,8 @@ cd $HOME/.vim/bundle/command-t/ruby/command-t/
 ruby extconf.rb
 make
 
+echo "Install vim-javascript"
+cd /home/meck/.vim/bundle/javascript/
+rake Install
+
 echo "Install successfully."
