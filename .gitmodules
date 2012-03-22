@@ -63,7 +63,7 @@
 	url = https://github.com/taxilian/VimDebugger.git
 [submodule "bundle/hammer"]
 	path = bundle/hammer
-	url = https://github.com/robgleeson/hammer.vim.git
+	url = https://github.com/matthias-guenther/hammer.vim.git
 [submodule "bundle/Color-Sampler-Pack"]
 	path = bundle/Color-Sampler-Pack
 	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
