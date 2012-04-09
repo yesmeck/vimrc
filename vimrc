@@ -33,7 +33,7 @@ set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.
 
 "------  Searching  ------
 set incsearch               "Search while typing
-set ignorecase              "Case Insensitive Searching
+" set ignorecase              "Case Insensitive Searching
 set smartcase               "Lowercase = case insensitive, any uppercase = case sensitive
 set hlsearch                "Highlight all search results
 "Following line clears the search highlights when pressing Lb
