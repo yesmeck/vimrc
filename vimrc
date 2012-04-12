@@ -95,6 +95,12 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 map <Leader>? :Helptags<CR>
 
+map <A-q> :Bclose<CR>
+
+map <C-s> :w<CR>
+
+map <C-S-s> :wall<CR>
+
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set ft=ruby
 
