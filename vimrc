@@ -97,6 +97,8 @@ map <Leader>? :Helptags<CR>
 
 map <A-q> :Bclose<CR>
 
+map <A-w> :q<CR>
+
 map <C-s> :w<CR>
 
 map <C-S-s> :wall<CR>
