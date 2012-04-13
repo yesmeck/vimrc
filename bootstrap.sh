@@ -32,7 +32,7 @@ ruby extconf.rb
 make
 
 echo "Install vim-javascript"
-cd /home/meck/.vim/bundle/javascript/
+cd $HOME/.vim/bundle/javascript/
 rake Install
 
 echo "Install successfully."
