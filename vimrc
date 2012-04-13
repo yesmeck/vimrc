@@ -37,6 +37,9 @@ set incsearch               "Search while typing
 set smartcase               "Lowercase = case insensitive, any uppercase = case sensitive
 set hlsearch                "Highlight all search results
 
+" F2 = Paste Toggle (in insert mode, pasting indented text behavior changes)
+set pastetoggle=<F2>
+
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
 

@@ -78,8 +78,6 @@ map <Leader>ct :! ctags -R *<CR>
 map <Leader>v "+gP
 " ,c = Copy
 map <Leader>c "+y
-" F2 = Paste Toggle (in insert mode, pasting indented text behavior changes)
-set pastetoggle=<F2>
 " ,T = Delete all Trailing space in file
 map <Leader>T :%s/\s\+$//<CR>
 " ,U = Deletes Unwanted empty lines
