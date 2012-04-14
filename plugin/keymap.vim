@@ -98,3 +98,6 @@ map <C-s> :w<CR>
 
 " 保存所有 buffer
 map <C-S-s> :wall<CR>
+
+" Search tags in current buffer
+map <Leader>t :CtrlPBufTag<CR>
