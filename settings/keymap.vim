@@ -103,6 +103,9 @@ map <C-S-s> :wall<CR>
 " Search tags in current buffer
 map <Leader>t :CtrlPBufTag<CR>
 
+" Search buffers
+noremap <leader>b :CtrlPBuffer<cr>
+
 " Disable arrow keys
 nnoremap <left> <nop>
 nnoremap <right> <nop>
