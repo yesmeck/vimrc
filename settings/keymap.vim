@@ -114,5 +114,4 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 
 " Disbale <esc> and map jk to it.
-inoremap <esc> <nop>
 inoremap jk <esc>
