@@ -26,11 +26,6 @@ ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
 echo "Update subomdules"
 cd $HOME/.vim && git submodule init && git submodule update
 
-echo "Install command-t"
-cd $HOME/.vim/bundle/command-t/ruby/command-t/
-ruby extconf.rb
-make
-
 echo "Install vim-javascript"
 cd $HOME/.vim/bundle/javascript/
 rake Install
