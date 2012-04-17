@@ -20,6 +20,9 @@ nnoremap <Leader>gd :Gdiff<CR>
 " Toggle NERD_tree
 noremap <silent> <F3> :NERDTreeToggle<CR>
 
+" Find file in NERT tree
+noremap <leader>f :NERDTreeFind<cr>
+
 " PhpDoc
 noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-P> :call PhpDocSingle()<CR>
