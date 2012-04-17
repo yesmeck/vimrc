@@ -2,6 +2,7 @@
 
 " 关闭其他 buffer
 map <A-b> :Bonly<CR>
+map <leader>B :Bonly<CR>
 
 " Ack
 noremap <leader>a :Ack
