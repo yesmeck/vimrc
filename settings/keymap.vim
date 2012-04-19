@@ -118,3 +118,6 @@ nnoremap <down> <nop>
 
 " Disbale <esc> and map jk to it.
 inoremap jk <esc>
+
+" Clear search highlight
+nnoremap <esc> :noh<cr>
