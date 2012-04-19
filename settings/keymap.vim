@@ -123,4 +123,4 @@ nnoremap <down> <nop>
 inoremap jk <esc>
 
 " Clear search highlight
-nnoremap <esc> :noh<cr>
+nnoremap <cr> :noh<cr>
