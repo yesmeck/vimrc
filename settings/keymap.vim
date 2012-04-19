@@ -34,6 +34,9 @@ map <Leader>os :OpenSession
 map <Leader>so :OpenSession
 map <Leader>ss :SaveSession
 
+" Toggle Tagbar
+noremap <silent> <Leader>y :TagbarToggle<CR>
+
 "Following line clears the search highlights when pressing Lb
 "nnoremap <leader>b :nohlsearch<CR>
 
