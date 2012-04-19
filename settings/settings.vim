@@ -72,3 +72,8 @@ let g:pdv_cfg_License=""
 
 " Session
 let g:session_autosave = 'no'
+
+" Tell tagbar where is jscatgs
+let g:tagbar_type_javascript = {
+    \ 'ctagsbin' : '/usr/bin/jsctags'
+\ }
