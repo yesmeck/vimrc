@@ -36,6 +36,7 @@ map <Leader>ss :SaveSession
 
 " Toggle Tagbar
 noremap <silent> <Leader>y :TagbarToggle<CR>
+noremap <f2> :TagbarToggle<cr>
 
 "Following line clears the search highlights when pressing Lb
 "nnoremap <leader>b :nohlsearch<CR>
