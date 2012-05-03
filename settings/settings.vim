@@ -44,6 +44,9 @@ set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.
 " F2 = Paste Toggle (in insert mode, pasting indented text behavior changes)
 set pastetoggle=<F2>
 
+" Show command in the last line of the screen.
+set showcmd
+
 "------  Plugins  ------
 
 " CtrtlP
