@@ -109,3 +109,6 @@
 [submodule "bundle/vim-aldmeris"]
 	path = bundle/vim-aldmeris
 	url = https://github.com/veloce/vim-aldmeris.git
+[submodule "bundle/vim-twig"]
+	path = bundle/vim-twig
+	url = https://github.com/beyondwords/vim-twig.git
