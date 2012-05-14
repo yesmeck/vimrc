@@ -9,7 +9,8 @@ set viminfo='1000,f1,:1000,/1000
 set history=500
 " Share clipboard with system
 set clipboard=unnamedplus
-set guioptions-=T           "remove toolbar
+set cursorline              "Highlight background of current line
+set colorcolumn=80
 "
 "------  Visual Options  ------
 set nu                      "Enable Line Numbers
