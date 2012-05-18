@@ -1,8 +1,5 @@
-" 快捷键配置
-
-" 关闭其他 buffer
-map <A-b> :Bonly<CR>
-map <leader>B :Bonly<CR>
+" Key Map
+" ----------
 
 " Ack
 noremap <leader>a :Ack
@@ -38,22 +35,37 @@ map <Leader>ss :SaveSession
 noremap <silent> <Leader>y :TagbarToggle<CR>
 noremap <f2> :TagbarToggle<cr>
 
-"Following line clears the search highlights when pressing Lb
-"nnoremap <leader>b :nohlsearch<CR>
+" Clear search highlight
+nnoremap <leader>b :nohlsearch<CR>
+nnoremap <cr> :nohlsearch<cr>
 
-"------  Buffers  ------
 " Ctrl Left & Right move between buffers
 " (need to find out how to disable this within nerdtree buffer)
 noremap <silent> <C-left> :bprev<CR>
 noremap <silent> <C-h> :bprev<CR>
 noremap <silent> <C-right> :bnext<CR>
 noremap <silent> <C-l> :bnext<CR>
+
 " Closes the current buffer
 nnoremap <silent> <Leader>q :Bclose<CR>
+map <A-q> :Bclose<CR>
+
 " Closes the current window
 nnoremap <silent> <Leader>Q <C-w>c
+map <A-w> :q<CR>
 
-"------  Moving Between Windows  ------
+" Close other buffers
+map <A-b> :Bonly<CR>
+map <leader>B :Bonly<CR>
+
+" Save the current buffer
+map <C-s> :w<CR>
+
+" Save all opened buffers
+map <C-S-s> :wall<CR>
+
+
+" Moving Between Windows
 nnoremap <Leader>h <C-w>h
 nnoremap <Leader>l <C-w>l
 nnoremap <Leader>j <C-w>j
@@ -75,7 +87,7 @@ nmap <silent> <Leader>ev :e $MYVIMRC<CR>
 nmap <silent> <Leader>es :so $MYVIMRC<CR>
 
 " When pressing <leader>cd switch to the directory of the open buffer
-"map <Leader>cd :cd %:p:h<CR>
+" map <Leader>cd :cd %:p:h<CR>
 " ,ct = Builds ctags
 map <Leader>ct :! ctags -R *<CR>
 
@@ -92,18 +104,6 @@ map <Leader>R :retab<CR>
 
 map <Leader>? :Helptags<CR>
 
-" 关闭当前 buffer
-map <A-q> :Bclose<CR>
-
-" 关闭当前窗口
-map <A-w> :q<CR>
-
-" 保存当前 buffer
-map <C-s> :w<CR>
-
-" 保存所有 buffer
-map <C-S-s> :wall<CR>
-
 " Search tags in current buffer
 map <Leader>t :CtrlPBufTag<CR>
 
@@ -115,13 +115,7 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-"inoremap <left> <nop>
-"inoremap <right> <nop>
-"inoremap <up> <nop>
-"inoremap <down> <nop>
 
-" Disbale <esc> and map jk to it.
+" Map jk to <esc>
 inoremap jk <esc>
 
-" Clear search highlight
-nnoremap <cr> :noh<cr>
