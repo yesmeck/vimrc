@@ -112,3 +112,6 @@
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
 	url = https://github.com/beyondwords/vim-twig.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
