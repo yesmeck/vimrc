@@ -108,6 +108,9 @@ let NERDTreeIgnore=['CVS']
 " setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
+" single click to open directory
+let NERDTreeMouseMode = 2
+
 if has("gui_running")
     autocmd vimenter * if !argc() | NERDTree | endif
 endif
