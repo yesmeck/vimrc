@@ -7,6 +7,8 @@ source $HOME/.vim/setting/autocmd.vim
 
 source $HOME/.vim/setting/keymap.vim
 
+source $HOME/.vim/setting/command.vim
+
 if filereadable($HOME.'/.vimrc_local')
     source $HOME/.vimrc_local
 endif
