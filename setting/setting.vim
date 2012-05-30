@@ -132,3 +132,7 @@ let g:tagbar_type_javascript = {
 \ }
 let g:tagbar_ctags_bin='/usr/bin/ctags'
 let g:tagbar_width=26
+
+" MiniBufExpl
+" ------------
+let g:miniBufExplUseSingleClick = 1
