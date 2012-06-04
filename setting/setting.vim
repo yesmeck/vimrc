@@ -80,6 +80,9 @@ set pastetoggle=<F2>
 " Show command in the last line of the screen.
 set showcmd
 
+" Always show the statusline
+set laststatus=2
+
 " Plugin settings
 " ==================
 
