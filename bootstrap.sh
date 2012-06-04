@@ -28,6 +28,6 @@ cd $HOME/.vim && git submodule init && git submodule update
 
 echo "Install vim-javascript"
 cd $HOME/.vim/bundle/javascript/
-rake Install
+rake install
 
 echo "Install successfully."
