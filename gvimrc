@@ -9,6 +9,9 @@ set guioptions-=m
 " 水平滚动条
 set guioptions+=b
 
+" Open NERDTree
+autocmd vimenter * if !argc() | NERDTree | endif
+
 " Set colorscheme and add minibufexpl colors
 function ColorScheme(cs)
     execute 'colorscheme ' . a:cs

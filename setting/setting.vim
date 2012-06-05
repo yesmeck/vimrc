@@ -114,10 +114,6 @@ let NERDTreeShowHidden=1
 " single click to open directory
 let NERDTreeMouseMode = 2
 
-if has("gui_running")
-    autocmd vimenter * if !argc() | NERDTree | endif
-endif
-
 " php-doc
 " ---------
 let g:pdv_cfg_Author="Meck <yesmeck@gmail.com>"
