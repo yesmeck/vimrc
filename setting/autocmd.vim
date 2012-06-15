@@ -15,4 +15,9 @@ autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 " add json syntax highlighting
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" These prevent accidentally loading files while in the NERDTree panel
+autocmd FileType nerdtree noremap <buffer> <c-left> <nop>
+autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
+autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
+autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
