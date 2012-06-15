@@ -4,7 +4,6 @@ set imcmdline
 
 " 隐藏工具栏
 set guioptions-=T
-set guioptions-=m
 
 " 水平滚动条
 set guioptions+=b
