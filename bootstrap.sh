@@ -16,15 +16,12 @@ for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do
 done
 #################################
 
-git clone git://github.com/yesmeck/vimrc.git $HOME/.vim \
+git clone --recursive git://github.com/yesmeck/vimrc.git $HOME/.vim \
     || die "Could not clone the repository to ${HOME}/.vim"
 
 echo "Link vim configuration files"
 ln -s $HOME/.vim/vimrc $HOME/.vimrc
 ln -s $HOME/.vim/gvimrc $HOME/.gvimrc
-
-echo "Update subomdules"
-cd $HOME/.vim && git submodule init && git submodule update
 
 echo "Install vim-javascript"
 cd $HOME/.vim/bundle/javascript/
