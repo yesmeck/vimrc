@@ -118,3 +118,6 @@
 [submodule "bundle/textile"]
 	path = bundle/textile
 	url = https://github.com/timcharper/textile.vim.git
+[submodule "bundle/skittles_berry"]
+	path = bundle/skittles_berry
+	url = https://github.com/shawncplus/skittles_berry.git
