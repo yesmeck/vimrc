@@ -24,7 +24,7 @@ function ColorScheme(cs)
     hi MBENormal guifg=#ffffff guibg=fg
 endfunction
 
-call ColorScheme('tir_black')
+call ColorScheme('solarized')
 
 " Source a global configuration file if available
 if filereadable($HOME.'/.gvimrc_local')
