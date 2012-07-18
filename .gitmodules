@@ -121,3 +121,6 @@
 [submodule "bundle/skittles_berry"]
 	path = bundle/skittles_berry
 	url = https://github.com/shawncplus/skittles_berry.git
+[submodule "bundle/vim-monokai"]
+	path = bundle/vim-monokai
+	url = https://github.com/sickill/vim-monokai.git
