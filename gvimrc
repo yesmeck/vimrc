@@ -6,8 +6,10 @@ set imcmdline
 set guioptions-=T
 set guioptions-=m
 
-" 水平滚动条
-set guioptions+=b
+" Remove all scrollbars
+set guioptions-=L
+set guioptions-=r
+set guioptions-=b
 
 " Open NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
