@@ -133,6 +133,3 @@
 [submodule "bundle/neco-ruby"]
 	path = bundle/neco-ruby
 	url = https://github.com/ujihisa/neco-ruby.git
-[submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = https://github.com/ervandew/supertab.git
