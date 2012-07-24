@@ -122,7 +122,3 @@ inoremap jk <esc>
 " Toggle menu bar
 nnoremap <silent> <f4> :if &guioptions=~'m' \| set guioptions-=m \| else \| set guioptions+=m \| endif<cr>
 
-" Easier horizontal scrolling
-nmap <C-l> zL
-nmap <C-h> zH
-
