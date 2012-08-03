@@ -1,7 +1,7 @@
 " Settings
 " =========
 " Default VIM colorscheme which works in terminals
-colorscheme darkblue
+call ColorScheme('molokai')
 
 " Enables syntax highlighting
 syntax on
