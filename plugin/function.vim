@@ -1,6 +1,5 @@
-" Set colorscheme and add minibufexpl colors
-function ColorScheme(cs)
-    execute 'colorscheme ' . a:cs
+" Set minibufexpl colors
+function SetMBPColors()
     " MiniBufExpl Colors
     hi MBEVisibleActive guifg=#A6DB29 guibg=fg
     hi MBEVisibleChangedActive guifg=#F1266F guibg=fg

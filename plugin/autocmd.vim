@@ -25,3 +25,5 @@ autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 autocmd FileType ruby setlocal tabstop=2
 autocmd FileType ruby setlocal shiftwidth=2
 autocmd FileType ruby setlocal softtabstop=2
+
+autocmd ColorScheme * call SetMBPColors()
