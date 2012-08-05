@@ -12,6 +12,9 @@ autocmd BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set
 " md, markdown, and mk are markdown and define buffer-local preview
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
+" set wrap for markdown
+autocmd FileType markdown setlocal wrap
+
 " add json syntax highlighting
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
