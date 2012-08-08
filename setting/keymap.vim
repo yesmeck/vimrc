@@ -39,12 +39,9 @@ noremap <f2> :TagbarToggle<cr>
 nnoremap <leader>b :nohlsearch<CR>
 nnoremap <cr> :nohlsearch<cr>
 
-" Ctrl Left & Right move between buffers
-" (need to find out how to disable this within nerdtree buffer)
-noremap <silent> <C-left> :bprev<CR>
-noremap <silent> <C-h> :bprev<CR>
-noremap <silent> <C-right> :bnext<CR>
-noremap <silent> <C-l> :bnext<CR>
+" Tab & Shift-Tab move between buffers
+noremap <silent> <Tab> :bn<CR>
+noremap <silent> <S-Tab> :bp<CR>
 
 " Closes the current buffer
 nnoremap <silent> <Leader>q :Bclose<CR>
