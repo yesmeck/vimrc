@@ -49,6 +49,9 @@ set softtabstop=4
 " Switch between unsaved buffers w/o needing to save, preserves history
 set hidden
 
+" Let mouse avaliable in terminal
+set mouse=a
+
 " Syntax Highlight
 filetype indent on
 
