@@ -1,7 +1,10 @@
 " Settings
 " =========
 " Default VIM colorscheme which works in terminals
-colorscheme molokai
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors = 256
+let g:solarized_termtrans = 1
 
 " Enables syntax highlighting
 syntax on
