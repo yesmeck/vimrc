@@ -133,3 +133,6 @@
 [submodule "bundle/neco-ruby"]
 	path = bundle/neco-ruby
 	url = https://github.com/ujihisa/neco-ruby.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git

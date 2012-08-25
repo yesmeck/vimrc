@@ -218,3 +218,6 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
+
+" EasyMontion
+let g:EasyMotion_leader_key = '<Leader>'
