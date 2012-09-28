@@ -42,12 +42,12 @@ set ruler
 set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
 
 " tab = 4 spaces
-set tabstop=4
+set tabstop=2
 
 " Indent to four spaces
-set shiftwidth=4
+set shiftwidth=2
 
-set softtabstop=4
+set softtabstop=2
 
 " Switch between unsaved buffers w/o needing to save, preserves history
 set hidden
