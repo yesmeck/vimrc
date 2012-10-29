@@ -31,9 +31,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/session"]
 	path = bundle/session
 	url = https://github.com/xolox/vim-session.git
@@ -133,3 +130,6 @@
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = git://github.com/Shougo/neosnippet.git
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
