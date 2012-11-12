@@ -119,3 +119,5 @@ inoremap jk <esc>
 " Toggle menu bar
 nnoremap <silent> <f4> :if &guioptions=~'m' \| set guioptions-=m \| else \| set guioptions+=m \| endif<cr>
 
+" Toggle gundo
+nnoremap <F5> :GundoToggle<CR>
