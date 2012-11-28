@@ -136,3 +136,6 @@
 [submodule "bundle/vim-slim"]
 	path = bundle/vim-slim
 	url = https://github.com/bbommarito/vim-slim.git
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/helino/vim-json.git
