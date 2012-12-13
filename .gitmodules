@@ -46,9 +46,6 @@
 [submodule "bundle/BufOnly"]
 	path = bundle/BufOnly
 	url = https://github.com/vim-scripts/BufOnly.vim.git
-[submodule "bundle/VimDebugger"]
-	path = bundle/VimDebugger
-	url = https://github.com/taxilian/VimDebugger.git
 [submodule "bundle/hammer"]
 	path = bundle/hammer
 	url = https://github.com/matthias-guenther/hammer.vim.git
@@ -97,21 +94,12 @@
 [submodule "bundle/vim-js-beautify"]
 	path = bundle/vim-js-beautify
 	url = https://github.com/bigfish/vim-js-beautify.git
-[submodule "bundle/vim-aldmeris"]
-	path = bundle/vim-aldmeris
-	url = https://github.com/veloce/vim-aldmeris.git
-[submodule "bundle/vim-twig"]
-	path = bundle/vim-twig
-	url = https://github.com/beyondwords/vim-twig.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
 [submodule "bundle/textile"]
 	path = bundle/textile
 	url = https://github.com/timcharper/textile.vim.git
-[submodule "bundle/skittles_berry"]
-	path = bundle/skittles_berry
-	url = https://github.com/shawncplus/skittles_berry.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
