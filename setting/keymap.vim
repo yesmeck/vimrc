@@ -40,8 +40,8 @@ nnoremap <leader>b :nohlsearch<CR>
 nnoremap <cr> :nohlsearch<cr>
 
 " Tab & Shift-Tab move between buffers
-noremap <silent> <Tab> :bn<CR>
-noremap <silent> <S-Tab> :bp<CR>
+noremap <silent> <Tab> :call BufferSwitch('next')<CR>
+noremap <silent> <S-Tab> :call BufferSwitch('prev')<CR>
 
 " Closes the current buffer
 nnoremap <silent> <Leader>q :Bclose<CR>
