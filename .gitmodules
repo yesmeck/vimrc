@@ -4,9 +4,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git://github.com/majutsushi/tagbar.git
-[submodule "bundle/phpcomplete"]
-	path = bundle/phpcomplete
-	url = git://github.com/shawncplus/phpcomplete.vim.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git

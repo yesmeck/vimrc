@@ -1,8 +1,6 @@
 " Auto Commands
 " --------------
 
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
 
