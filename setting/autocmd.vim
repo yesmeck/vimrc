@@ -27,3 +27,8 @@ autocmd ColorScheme * call SetMBPColors()
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+
+if has("gui_running")
+  " Automatically resize splits when resizing gvim window
+  autocmd VimResized * wincmd =
+endif
