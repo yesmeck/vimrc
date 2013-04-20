@@ -34,9 +34,6 @@
 [submodule "bundle/pathogen"]
 	path = bundle/pathogen
 	url = https://github.com/tpope/vim-pathogen.git
-[submodule "bundle/PDV-revised"]
-	path = bundle/PDV-revised
-	url = https://github.com/yesmeck/PDV-revised.git
 [submodule "bundle/BufOnly"]
 	path = bundle/BufOnly
 	url = https://github.com/vim-scripts/BufOnly.vim.git

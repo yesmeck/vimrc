@@ -123,12 +123,6 @@ let NERDTreeShowHidden=1
 " single click to open directory
 let NERDTreeMouseMode = 2
 
-" php-doc
-" ---------
-let g:pdv_cfg_Author="Meck <yesmeck@gmail.com>"
-let g:pdv_cfg_Copyright="2011 Meck"
-let g:pdv_cfg_License=""
-
 " Session
 " ---------
 let g:session_autosave = 'no'
