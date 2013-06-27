@@ -10,6 +10,8 @@ autocmd BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru} set
 " md, markdown, and mk are markdown and define buffer-local preview
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
+autocmd BufRead,BufNewFile *.slim set ft=slim
+
 " set wrap for markdown
 autocmd FileType markdown setlocal wrap
 
