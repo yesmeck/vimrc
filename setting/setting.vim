@@ -116,7 +116,7 @@ let g:localvimrc_ask=0
 
 " NERDTree
 " ----------
-let NERDTreeIgnore=['CVS']
+let NERDTreeIgnore=['CVS', '\.swp$']
 " setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
