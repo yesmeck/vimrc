@@ -25,9 +25,6 @@
 [submodule "bundle/buftabs"]
 	path = bundle/buftabs
 	url = https://github.com/vim-scripts/buftabs.git
-[submodule "bundle/session"]
-	path = bundle/session
-	url = https://github.com/xolox/vim-session.git
 [submodule "bundle/surround"]
 	path = bundle/surround
 	url = https://github.com/tpope/vim-surround.git
@@ -37,18 +34,6 @@
 [submodule "bundle/BufOnly"]
 	path = bundle/BufOnly
 	url = https://github.com/vim-scripts/BufOnly.vim.git
-[submodule "bundle/hammer"]
-	path = bundle/hammer
-	url = https://github.com/matthias-guenther/hammer.vim.git
-[submodule "bundle/Color-Sampler-Pack"]
-	path = bundle/Color-Sampler-Pack
-	url = https://github.com/vim-scripts/Color-Sampler-Pack.git
-[submodule "bundle/ScrollColors"]
-	path = bundle/ScrollColors
-	url = https://github.com/vim-scripts/ScrollColors.git
-[submodule "bundle/localvimrc"]
-	path = bundle/localvimrc
-	url = https://github.com/embear/vim-localvimrc.git
 [submodule "bundle/powerline"]
 	path = bundle/powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
@@ -61,9 +46,6 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/mustache"]
-	path = bundle/mustache
-	url = git://github.com/juvenn/mustache.vim.git
 [submodule "bundle/javascript"]
 	path = bundle/javascript
 	url = https://github.com/pangloss/vim-javascript.git
@@ -82,9 +64,6 @@
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
 	url = https://github.com/groenewege/vim-less.git
-[submodule "bundle/textile"]
-	path = bundle/textile
-	url = https://github.com/timcharper/textile.vim.git
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
@@ -100,9 +79,6 @@
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = git://github.com/Shougo/neosnippet.git
-[submodule "bundle/tcomment_vim"]
-	path = bundle/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim.git
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = http://github.com/sjl/gundo.vim.git
@@ -127,3 +103,6 @@
 [submodule "bundle/nginx.vim"]
 	path = bundle/nginx.vim
 	url = https://github.com/vim-scripts/nginx.vim.git
+[submodule "bundle/editorconfig-vim"]
+	path = bundle/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
