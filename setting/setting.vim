@@ -1,7 +1,5 @@
 " Settings
 " =========
-" Load ~/.zshrc
-set shell=zsh\ -i
 
 " Default VIM colorscheme which works in terminals
 set background=dark
