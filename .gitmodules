@@ -99,10 +99,10 @@
 	url = https://github.com/vim-scripts/nginx.vim.git
 [submodule "bundle/editorconfig-vim"]
 	path = bundle/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = git://github.com/editorconfig/editorconfig-vim.git
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
-	url = git@github.com:mattn/emmet-vim.git
+	url = git://github.com/mattn/emmet-vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = git@github.com:bling/vim-airline.git
+	url = git://github.com/bling/vim-airline.git
