@@ -3,7 +3,7 @@
 
 " Default VIM colorscheme which works in terminals
 set background=dark
-colorscheme solarized
+colorscheme molokai
 let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 
