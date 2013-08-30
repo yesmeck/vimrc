@@ -21,20 +21,6 @@ noremap <silent> <F3> :NERDTreeToggle<CR>
 " Find file in NERT tree
 noremap <leader>f :NERDTreeFind<cr>
 
-" PhpDoc
-noremap <C-P> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-P> :call PhpDocSingle()<CR>
-vnoremap <C-P> :call PhpDocRange()<CR>:let g:pdv_cfg_Version=""
-
-" Session
-map <Leader>os :OpenSession
-map <Leader>so :OpenSession
-map <Leader>ss :SaveSession
-
-" Toggle Tagbar
-noremap <silent> <Leader>y :TagbarToggle<CR>
-noremap <f2> :TagbarToggle<cr>
-
 " Clear search highlight
 nnoremap <leader>b :nohlsearch<CR>
 nnoremap <cr> :nohlsearch<cr>
@@ -60,7 +46,6 @@ map <C-s> :w<CR>
 
 " Save all opened buffers
 map <C-S-s> :wall<CR>
-
 
 " Moving Between Windows
 nnoremap <Leader>h <C-w>h
@@ -112,9 +97,6 @@ nnoremap <left> <nop>
 nnoremap <right> <nop>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
-
-" Map jk to <esc>
-inoremap jk <esc>
 
 " Toggle menu bar
 nnoremap <silent> <f4> :if &guioptions=~'m' \| set guioptions-=m \| else \| set guioptions+=m \| endif<cr>

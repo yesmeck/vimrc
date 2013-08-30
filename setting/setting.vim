@@ -4,8 +4,6 @@
 " Default VIM colorscheme which works in terminals
 set background=dark
 colorscheme molokai
-let g:solarized_termcolors = 256
-let g:solarized_termtrans = 1
 
 " Enables syntax highlighting
 syntax on
@@ -39,8 +37,6 @@ set vb
 
 " Displays cursor position on bottom right of screen
 set ruler
-
-set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
 
 " tab = 4 spaces
 set tabstop=2
@@ -93,24 +89,9 @@ set laststatus=2
 " Plugin settings
 " ==================
 
-" Indent guide
-" ----------------
-"
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_guide_size=1
-
 " CtrtlP
 " ---------
 let g:ctrlp_map = '<Leader>p'
-
-" Hammer
-" -------
-" xdg_open does not work
-let g:HammerBrowser = 'chromium'
-
-" localvimrc
-" -----------
-let g:localvimrc_ask=0
 
 " NERDTree
 " ----------
@@ -120,18 +101,6 @@ let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
 " single click to open directory
 let NERDTreeMouseMode = 2
-
-" Session
-" ---------
-let g:session_autosave = 'no'
-
-" Tagbar
-" --------
-let g:tagbar_type_javascript = {
-    \ 'ctagsbin' : '/usr/bin/jsctags'
-\ }
-let g:tagbar_ctags_bin='/usr/bin/ctags'
-let g:tagbar_width=26
 
 " MiniBufExpl
 " ------------
@@ -213,3 +182,4 @@ let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " Airline
 let g:airline_powerline_fonts = 1
+
