@@ -4,9 +4,6 @@
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = https://github.com/yesmeck/snipmate.vim.git
 [submodule "bundle/NERD_tree"]
 	path = bundle/NERD_tree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -58,15 +55,9 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule "bundle/neocomplcache"]
-	path = bundle/neocomplcache
-	url = https://github.com/Shougo/neocomplcache.git
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = https://github.com/Shougo/vimproc.git
-[submodule "bundle/neco-ruby"]
-	path = bundle/neco-ruby
-	url = https://github.com/ujihisa/neco-ruby.git
 [submodule "bundle/neosnippet"]
 	path = bundle/neosnippet
 	url = git://github.com/Shougo/neosnippet.git
@@ -97,3 +88,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = git://github.com/bling/vim-airline.git
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = git@github.com:honza/vim-snippets.git
