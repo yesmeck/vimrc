@@ -22,7 +22,6 @@ noremap <silent> <F3> :NERDTreeToggle<CR>
 noremap <leader>f :NERDTreeFind<cr>
 
 " Clear search highlight
-nnoremap <leader>b :nohlsearch<CR>
 nnoremap <cr> :nohlsearch<cr>
 
 " Tab & Shift-Tab move between buffers
@@ -37,54 +36,8 @@ map <A-q> :Bclose<CR>
 nnoremap <silent> <Leader>Q <C-w>c
 map <A-w> :q<CR>
 
-" Close other buffers
-map <A-b> :Bonly<CR>
-map <leader>B :Bonly<CR>
-
 " Save the current buffer
 map <C-s> :w<CR>
-
-" Save all opened buffers
-map <C-S-s> :wall<CR>
-
-" Moving Between Windows
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>l <C-w>l
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>wo <C-w>o
-nnoremap <Leader>wv <C-w>v<C-w>l
-nnoremap <Leader>ws <C-w>s
-nnoremap <Leader>ww <C-w><C-w>
-
-" Opens an edit command with the path of the currently edited file filled in Normal mode: <Leader>ee
-map <Leader>ee :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Opens a tab edit command with the path of the currently edited file filled in
-" Normal mode: <Leader>t
-map <Leader>et :tabe <C-R>=expand("%:p:h") . "/" <CR>
-
-" Edit and Reload .vimrc files
-nmap <silent> <Leader>ev :e $MYVIMRC<CR>
-nmap <silent> <Leader>es :so $MYVIMRC<CR>
-
-" When pressing <leader>cd switch to the directory of the open buffer
-" map <Leader>cd :cd %:p:h<CR>
-" ,ct = Builds ctags
-map <Leader>ct :! ctags -R *<CR>
-
-" ,v = Paste
-map <Leader>v "+gP
-" ,c = Copy
-map <Leader>c "+y
-" ,T = Delete all Trailing space in file
-map <Leader>T :%s/\s\+$//<CR>
-" ,U = Deletes Unwanted empty lines
-map <Leader>U :g/^$/d<CR>
-" ,R = Converts tabs to spaces in document
-map <Leader>R :retab<CR>
-
-map <Leader>? :Helptags<CR>
 
 " Search tags in current buffer
 map <Leader>t :CtrlPBufTag<CR>
