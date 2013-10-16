@@ -94,3 +94,6 @@
 [submodule "bundle/vim-bufferline"]
 	path = bundle/vim-bufferline
 	url = git@github.com:bling/vim-bufferline.git
+[submodule "bundle/vim-haml"]
+	path = bundle/vim-haml
+	url = git@github.com:tpope/vim-haml.git
