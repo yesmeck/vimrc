@@ -67,9 +67,6 @@
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/helino/vim-json.git
-[submodule "bundle/minibufexpl.vim"]
-	path = bundle/minibufexpl.vim
-	url = git://github.com/techlivezheng/vim-plugin-minibufexpl.git
 [submodule "bundle/indentLine"]
 	path = bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
@@ -94,3 +91,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
+[submodule "bundle/vim-bufferline"]
+	path = bundle/vim-bufferline
+	url = git@github.com:bling/vim-bufferline.git
