@@ -86,6 +86,9 @@ set showcmd
 " Always show the statusline
 set laststatus=2
 
+" Allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
 " Plugin settings
 " ==================
 
