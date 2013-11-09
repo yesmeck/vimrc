@@ -89,6 +89,10 @@ set laststatus=2
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
+" Enable error beep
+set novisualbell
+set errorbells
+
 " Plugin settings
 " ==================
 
