@@ -91,9 +91,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git@github.com:scrooloose/syntastic.git
-[submodule "bundle/vim-bufferline"]
-	path = bundle/vim-bufferline
-	url = git@github.com:bling/vim-bufferline.git
 [submodule "bundle/vim-haml"]
 	path = bundle/vim-haml
 	url = git@github.com:tpope/vim-haml.git
@@ -103,3 +100,9 @@
 [submodule "bundle/vim-eco"]
 	path = bundle/vim-eco
 	url = https://github.com/AndrewRadev/vim-eco.git
+[submodule "bundle/vim-sneak"]
+	path = bundle/vim-sneak
+	url = https://github.com/justinmk/vim-sneak.git
+[submodule "bundle/vim-plugin-minibufexpl"]
+	path = bundle/vim-plugin-minibufexpl
+	url = https://github.com/techlivezheng/vim-plugin-minibufexpl.git
