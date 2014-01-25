@@ -204,7 +204,7 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 " Airline
 let g:airline_powerline_fonts = 1
 
-" Neobundle
+" Neosnippet
 " Plugin key-mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)

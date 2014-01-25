@@ -106,3 +106,6 @@
 [submodule "bundle/vim-plugin-minibufexpl"]
 	path = bundle/vim-plugin-minibufexpl
 	url = https://github.com/techlivezheng/vim-plugin-minibufexpl.git
+[submodule "bundle/neosnippet-snippets"]
+	path = bundle/neosnippet-snippets
+	url = git@github.com:Shougo/neosnippet-snippets.git
