@@ -112,3 +112,12 @@
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
 	url = git@github.com:mustache/vim-mustache-handlebars.git
+[submodule "bundle/vim-rvm"]
+	path = bundle/vim-rvm
+	url = git@github.com:tpope/vim-rvm.git
+[submodule "bundle/vim-riml"]
+	path = bundle/vim-riml
+	url = git@github.com:luke-gru/vim-riml.git
+[submodule "bundle/html5.vim"]
+	path = bundle/html5.vim
+	url = git@github.com:othree/html5.vim.git
