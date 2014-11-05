@@ -102,7 +102,7 @@ let g:ctrlp_map = '<Leader>p'
 
 " NERDTree
 " ----------
-let NERDTreeIgnore=['CVS', '\.swp$']
+let NERDTreeIgnore=['CVS', '\.swp$', '\.DS_Store']
 " setting root dir in NT also sets VIM's cd
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
