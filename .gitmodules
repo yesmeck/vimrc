@@ -100,9 +100,6 @@
 [submodule "bundle/vim-sneak"]
 	path = bundle/vim-sneak
 	url = git@github.com:justinmk/vim-sneak.git
-[submodule "bundle/vim-plugin-minibufexpl"]
-	path = bundle/vim-plugin-minibufexpl
-	url = git@github.com:techlivezheng/vim-plugin-minibufexpl.git
 [submodule "bundle/neosnippet-snippets"]
 	path = bundle/neosnippet-snippets
 	url = git@github.com:Shougo/neosnippet-snippets.git

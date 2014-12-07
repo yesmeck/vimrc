@@ -24,8 +24,6 @@ autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
-autocmd ColorScheme * call SetMBPColors()
-
 autocmd FileType javascript noremap <buffer>  <c-l> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-l> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-l> :call CSSBeautify()<cr>
