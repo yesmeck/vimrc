@@ -56,3 +56,6 @@ nnoremap <silent> <f4> :if &guioptions=~'m' \| set guioptions-=m \| else \| set 
 
 " Toggle gundo
 nnoremap <F5> :GundoToggle<CR>
+
+" Toggle tagbar
+nnoremap <F6> :TagbarToggle<CR>
