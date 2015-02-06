@@ -23,17 +23,12 @@ function! CanBufferSwitch(buf)
     return 1
   endif
 
-  " Skip quickfix
-  if getbufvar(a:buf, "&buftype") == 'quickfix'
-    return 0
-  endif
-
-  " Nonnormal buffers.
+  " Skip non normal buffers.
   if getbufvar(a:buf, "&buftype") != ''
     return 1
   endif
 
-  " Unmodifiable buffers.
+  " Only show modifiable buffers.
   if getbufvar(a:buf, '&modifiable') != 1
     return 1
   endif
