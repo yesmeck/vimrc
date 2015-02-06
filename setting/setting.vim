@@ -32,9 +32,6 @@ set nu
 " Disable word wrap
 set nowrap
 
-" Visual bell instead of beeps
-set vb
-
 " Displays cursor position on bottom right of screen
 set ruler
 
