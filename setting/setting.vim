@@ -38,12 +38,11 @@ set vb
 " Displays cursor position on bottom right of screen
 set ruler
 
-" tab = 4 spaces
+" tab = 2 spaces
 set tabstop=2
 
-" Indent to four spaces
+" Indent to two spaces
 set shiftwidth=2
-
 set softtabstop=2
 
 " Switch between unsaved buffers w/o needing to save, preserves history
