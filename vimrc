@@ -12,5 +12,5 @@ source $HOME/.vim/setting/setting.vim
 source $HOME/.vim/setting/keymap.vim
 
 if filereadable($HOME.'/.vimrc_local')
-    source $HOME/.vimrc_local
+  source $HOME/.vimrc_local
 endif

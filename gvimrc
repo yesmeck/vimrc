@@ -2,7 +2,7 @@ set encoding=utf8
 set langmenu=zh_CN.UTF-8
 set imcmdline
 
-" 隐藏工具栏
+" Hide toolbar
 set guioptions-=T
 set guioptions-=m
 
@@ -14,7 +14,7 @@ set guioptions-=b
 " Open NERDTree
 autocmd vimenter * if !argc() | NERDTree | endif
 
-" Source a global configuration file if available
+" Source a local configuration file if available
 if filereadable($HOME.'/.gvimrc_local')
   source $HOME/.gvimrc_local
 endif
