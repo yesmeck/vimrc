@@ -142,3 +142,9 @@
 [submodule "bundle/vim-autoswap"]
 	path = bundle/vim-autoswap
 	url = git@github.com:yesmeck/vim-autoswap.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = git@github.com:mattn/gist-vim.git
+[submodule "bundle/webapi"]
+	path = bundle/webapi
+	url = git@github.com:mattn/webapi-vim.git
