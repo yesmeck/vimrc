@@ -139,3 +139,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
+[submodule "bundle/vim-autoswap"]
+	path = bundle/vim-autoswap
+	url = git@github.com:yesmeck/vim-autoswap.git
