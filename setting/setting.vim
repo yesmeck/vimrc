@@ -3,7 +3,7 @@
 
 " Default VIM colorscheme which works in terminals
 set background=dark
-colorscheme molokai
+colorscheme Dracula
 
 " Enables syntax highlighting
 syntax on
