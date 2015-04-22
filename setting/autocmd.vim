@@ -5,7 +5,7 @@
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Thorfile, Rakefile, Vagrantfile and Gemfile are Ruby
-autocmd BufRead,BufNewFile {Jsfile,Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.cap} set ft=ruby
+autocmd BufRead,BufNewFile {Jsfile,Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru,*.cap,*.ctl,*.etl,*.ebf} set ft=ruby
 
 " md, markdown, and mk are markdown and define buffer-local preview
 autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
