@@ -18,6 +18,11 @@ function! BufferSwitch(to)
 endfunction
 
 function! CanBufferSwitch(buf)
+  " vimshell
+  if match(bufname(a:buf), "[vimshell]")
+    return 0
+  endif
+
   " Skip unlisted buffers.
   if buflisted(a:buf) == 0
     return 1
