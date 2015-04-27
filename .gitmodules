@@ -148,3 +148,9 @@
 [submodule "bundle/vim-vroom"]
 	path = bundle/vim-vroom
 	url = git@github.com:skalnik/vim-vroom.git
+[submodule "bundle/vimshell"]
+	path = bundle/vimshell
+	url = git@github.com:Shougo/vimshell.vim.git
+[submodule "bundle/vimproc"]
+	path = bundle/vimproc
+	url = git@github.com:Shougo/vimproc.vim.git
