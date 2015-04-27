@@ -124,9 +124,6 @@
 [submodule "bundle/fencview"]
 	path = bundle/fencview
 	url = git@github.com:mbbill/fencview.git
-[submodule "bundle/vroom"]
-	path = bundle/vroom
-	url = git@github.com:skalnik/vim-vroom.git
 [submodule "bundle/vim-multiple-cursors"]
 	path = bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors
