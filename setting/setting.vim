@@ -243,3 +243,5 @@ nmap ga <Plug>(EasyAlign)
 " -----
 " Use vimshell
 let g:vroom_use_vimshell = 1
+let g:vroom_test_unit_command = "rake test"
+let g:vroom_use_binstubs = 1
