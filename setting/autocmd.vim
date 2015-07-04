@@ -28,6 +28,8 @@ autocmd FileType javascript noremap <buffer>  <c-l> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-l> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-l> :call CSSBeautify()<cr>
 
+autocmd FileType make setlocal noexpandtab
+
 if has("gui_running")
   " Automatically resize splits when resizing gvim window
   autocmd VimResized * wincmd =
