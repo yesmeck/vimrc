@@ -27,7 +27,7 @@
 	url = git@github.com:vim-scripts/BufOnly.vim.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
-	url = git@github.com:kien/ctrlp.vim.git
+	url = git@github.com:ctrlpvim/ctrlp.vim.git
 [submodule "bundle/vim-ruby"]
 	path = bundle/vim-ruby
 	url = git@github.com:vim-ruby/vim-ruby.git
@@ -154,3 +154,6 @@
 [submodule "bundle/vimproc"]
 	path = bundle/vimproc
 	url = git@github.com:Shougo/vimproc.vim.git
+[submodule "bundle/vim-jsx"]
+	path = bundle/vim-jsx
+	url = https://github.com/mxw/vim-jsx

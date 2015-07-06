@@ -245,3 +245,11 @@ nmap ga <Plug>(EasyAlign)
 let g:vroom_use_vimshell = 1
 let g:vroom_test_unit_command = "rake test"
 let g:vroom_use_binstubs = 1
+
+" jsx
+" ---
+let g:jsx_ext_required = 0
+
+" Syntastic
+" ---------
+let g:syntastic_javascript_checkers = ['eslint']
