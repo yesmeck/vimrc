@@ -160,3 +160,9 @@
 [submodule "bundle/vim-react-snippets"]
 	path = bundle/vim-react-snippets
 	url = git@github.com:justinj/vim-react-snippets.git
+[submodule "bundle/javascript-libraries-syntax.vim"]
+	path = bundle/javascript-libraries-syntax.vim
+	url = git@github.com:othree/javascript-libraries-syntax.vim.git
+[submodule "bundle/vim-localvimrc"]
+	path = bundle/vim-localvimrc
+	url = git@github.com:embear/vim-localvimrc.git

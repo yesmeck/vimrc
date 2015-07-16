@@ -254,3 +254,8 @@ let g:jsx_ext_required = 0
 " Syntastic
 " ---------
 let g:syntastic_javascript_checkers = ['eslint']
+
+" Localvimrc
+" ----------
+let g:localvimrc_sandbox = 0
+let g:localvimrc_ask = 0
