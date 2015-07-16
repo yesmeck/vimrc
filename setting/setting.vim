@@ -95,6 +95,7 @@ set errorbells
 " CtrtlP
 " ---------
 let g:ctrlp_map = '<Leader>p'
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/bower_components/*,*/node_modules/*        " Linux/MacOSX
 
 " NERDTree
 " ----------
