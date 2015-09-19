@@ -172,3 +172,6 @@
 [submodule "bundle/vim-jade"]
 	path = bundle/vim-jade
 	url = git@github.com:digitaltoad/vim-jade.git
+[submodule "bundle/yajs.vim"]
+	path = bundle/yajs.vim
+	url = git@github.com:othree/yajs.vim.git
