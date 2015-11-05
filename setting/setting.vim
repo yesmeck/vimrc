@@ -21,8 +21,9 @@ set history=500
 " Share clipboard with system
 "set clipboard=unnamed
 
-" Highlight background of current line
+" Highlight background of current line and current column
 set cursorline
+set cursorcolumn
 
 set colorcolumn=80
 
@@ -207,6 +208,7 @@ xmap <C-k>     <Plug>(neosnippet_expand_target)
 
 " Tell Neosnippet about the other snippets
 let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/snippets'
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
