@@ -1,6 +1,7 @@
 set encoding=utf8
 set langmenu=zh_CN.UTF-8
 set imcmdline
+colorscheme base16-flat
 
 " Hide toolbar
 set guioptions-=T

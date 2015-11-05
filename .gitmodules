@@ -181,3 +181,6 @@
 [submodule "bundle/vim-react-es6-snippets"]
 	path = bundle/vim-react-es6-snippets
 	url = https://github.com/bentayloruk/vim-react-es6-snippets.git
+[submodule "bundle/base16-vim"]
+	path = bundle/base16-vim
+	url = git@github.com:chriskempson/base16-vim.git
