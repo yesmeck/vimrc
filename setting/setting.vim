@@ -72,7 +72,7 @@ set smartcase
 set hlsearch
 
 " Ignore these files when completing names
-set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif
+set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.xpm
 
 " F2 = Paste Toggle (in insert mode, pasting indented text behavior changes)
 set pastetoggle=<F2>
@@ -106,6 +106,7 @@ let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
 " single click to open directory
 let NERDTreeMouseMode = 2
+let NERDTreeRespectWildIgnore = 0
 
 " MiniBufExpl
 " ------------

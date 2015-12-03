@@ -184,3 +184,9 @@
 [submodule "bundle/base16-vim"]
 	path = bundle/base16-vim
 	url = git@github.com:chriskempson/base16-vim.git
+[submodule "bundle/elm.vim"]
+	path = bundle/elm.vim
+	url = git@github.com:lambdatoast/elm.vim.git
+[submodule "bundle/vim-devicons"]
+	path = bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
