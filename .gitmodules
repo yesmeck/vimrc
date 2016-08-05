@@ -202,3 +202,6 @@
 [submodule "bundle/tsuquyomi"]
 	path = bundle/tsuquyomi
 	url = git@github.com:Quramy/tsuquyomi.git
+[submodule "bundle/dustjs"]
+	path = bundle/dustjs
+	url = git://github.com/jimmyhchan/dustjs.vim.git
