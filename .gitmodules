@@ -208,3 +208,6 @@
 [submodule "bundle/vim-crystal"]
 	path = bundle/vim-crystal
 	url = git@github.com:rhysd/vim-crystal.git
+[submodule "bundle/yats.vim"]
+	path = bundle/yats.vim
+	url = git@github.com:HerringtonDarkholme/yats.vim.git
