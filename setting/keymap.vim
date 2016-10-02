@@ -22,7 +22,7 @@ noremap <silent> <F3> :NERDTreeToggle<CR>
 noremap <leader>f :NERDTreeFind<cr>
 
 " Clear search highlight
-nnoremap <cr> :nohlsearch<cr>
+nnoremap <C-l> :nohlsearch<cr>
 
 " Tab & Shift-Tab move between buffers
 noremap <silent> <Tab> :call BufferSwitch('next')<CR>
