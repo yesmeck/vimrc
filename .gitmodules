@@ -211,3 +211,6 @@
 [submodule "bundle/yats.vim"]
 	path = bundle/yats.vim
 	url = git@github.com:HerringtonDarkholme/yats.vim.git
+[submodule "bundle/neco-look"]
+	path = bundle/neco-look
+	url = git@github.com:ujihisa/neco-look.git
