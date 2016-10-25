@@ -24,9 +24,9 @@ autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
 autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
-autocmd FileType javascript noremap <buffer>  <c-l> :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-l> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-l> :call CSSBeautify()<cr>
+" autocmd FileType javascript noremap <buffer>  <c-b> :call JsBeautify()<cr>
+" autocmd FileType html noremap <buffer> <c-b> :call HtmlBeautify()<cr>
+" autocmd FileType css noremap <buffer> <c-b> :call CSSBeautify()<cr>
 
 autocmd FileType make setlocal noexpandtab
 
