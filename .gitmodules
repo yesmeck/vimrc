@@ -214,3 +214,6 @@
 [submodule "bundle/neco-look"]
 	path = bundle/neco-look
 	url = git@github.com:ujihisa/neco-look.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
