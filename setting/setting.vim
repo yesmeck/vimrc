@@ -270,7 +270,3 @@ let g:syntastic_typescript_checkers = ['tsuquyomi']
 " ----------
 let g:localvimrc_sandbox = 0
 let g:localvimrc_ask = 0
-
-" markdown
-" --------
-let g:vim_markdown_folding_disabled = 1
