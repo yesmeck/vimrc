@@ -72,5 +72,7 @@ Plug 'rhysd/vim-crystal'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'ujihisa/neco-look'
 Plug 'liuchengxu/space-vim-dark'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 call plug#end()
