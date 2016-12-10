@@ -85,14 +85,14 @@ endif
 
 " Commands {
 " Close all buffers
-command Ball call CloseAllBufs()
+command! Ball call CloseAllBufs()
 
 " Save as root
-command Sudow w !sudo tee % > /dev/null 2>&1
+command! Sudow w !sudo tee % > /dev/null 2>&1
 
-command W w
+command! W w
 
-command Q q
+command! Q q
 " }
 
 " Settings {
@@ -113,7 +113,7 @@ set viminfo='1000,f1,:1000,/1000
 set history=500
 
 " Share clipboard with system
-"set clipboard=unnamed
+set clipboard=unnamed
 
 " Highlight background of current line and current column
 set cursorline
@@ -337,6 +337,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
+let g:airline_theme='violet'
 
 " vim-easy-align
 " --------------
@@ -369,6 +370,8 @@ let g:localvimrc_ask = 0
 " }
 
 " Keymaps {
+nnoremap <Leader>fR :source $MYVIMRC<CR>
+
 " Ack
 noremap <leader>a :Ack
 
@@ -435,6 +438,11 @@ inoremap ∆ <Esc>:m .+1<CR>==gi
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
+
+" fzf {
+
+" }
+map <leader>? :Maps<CR>
 " }
 
 if filereadable($HOME.'/.vimrc_local')
