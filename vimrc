@@ -102,6 +102,9 @@ colorscheme space-vim-dark
 " Enables syntax highlighting
 syntax on
 
+" Relative number
+set relativenumber
+
 " Changes Leader key into a comma instead of a backslash
 let mapleader=","
 
