@@ -69,5 +69,6 @@ Plug 'ujihisa/neco-look'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 call plug#end()
