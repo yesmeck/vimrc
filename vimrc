@@ -373,7 +373,7 @@ let g:localvimrc_ask = 0
 " }
 
 " Keymaps {
-nnoremap <Leader>fR :source $MYVIMRC<CR>
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " Ack
 noremap <leader>a :Ack
