@@ -70,5 +70,6 @@ Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'posva/vim-vue'
 
 call plug#end()
