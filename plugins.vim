@@ -27,7 +27,6 @@ Plug 'mattn/emmet-vim'
 Plug 'bling/vim-airline'
 Plug 'Shougo/neocomplete.vim'
 Plug 'honza/vim-snippets'
-Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-haml'
 Plug 'osyo-manga/vim-over'
 Plug 'AndrewRadev/vim-eco'
@@ -71,5 +70,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'posva/vim-vue'
+Plug 'w0rp/ale'
 
 call plug#end()

@@ -375,11 +375,6 @@ let g:vroom_use_binstubs = 1
 " ---
 let g:jsx_ext_required = 0
 
-" Syntastic
-" ---------
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_typescript_checkers = ['tsuquyomi']
-
 " Localvimrc
 " ----------
 let g:localvimrc_sandbox = 0
@@ -455,6 +450,11 @@ inoremap ∆ <Esc>:m .+1<CR>==gi
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
+
+" ale
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
 
 " fzf {
 
