@@ -452,8 +452,11 @@ vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
 " ale
+let g:ale_echo_msg_format = '%linter%: %s'
+
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'jsx': ['eslint'],
 \}
 
 " fzf {
