@@ -67,5 +67,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'posva/vim-vue'
 Plug 'w0rp/ale'
+Plug 'Shougo/vimfiler.vim'
+Plug 'Shougo/unite.vim'
 
 call plug#end()

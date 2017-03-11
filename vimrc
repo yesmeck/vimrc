@@ -60,7 +60,7 @@ endfunction
 " }
 
 " Auto Commands {
-autocmd VimEnter * if !argc() | Explore | endif
+autocmd VimEnter * if !argc() | VimFilerExplorer | endif
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -101,7 +101,7 @@ command! W w
 
 command! Q q
 
-command! E Explore
+command! E VimFiler
 " }
 
 " Settings {
@@ -456,12 +456,14 @@ let g:ale_linters = {
 " }
 map <leader>? :Maps<CR>
 
-" netrw {
-let g:netrw_banner       = 0
-let g:netrw_keepdir      = 0
-let g:netrw_liststyle    = 1 " or 3
-let g:netrw_sort_options = 'i'
+" VimFiler {
+let g:vimfiler_as_default_explorer = 1
+call vimfiler#custom#profile('default', 'context', {
+      \ 'safe' : 0,
+      \ })
 " }
+
+let g:extra_whitespace_ignored_filetypes = ['vimfiler']
 " }
 
 if filereadable($HOME.'/.vimrc_local')
