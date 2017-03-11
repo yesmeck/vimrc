@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'altercation/vim-colors-solarized'
-Plug 'scrooloose/nerdtree'
 Plug 'mileszs/ack.vim'
 Plug 'bcaccinolo/bclose'
 Plug 'vim-scripts/buftabs'
@@ -66,7 +65,6 @@ Plug 'ujihisa/neco-look'
 Plug 'liuchengxu/space-vim-dark'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'posva/vim-vue'
 Plug 'w0rp/ale'
 

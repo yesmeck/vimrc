@@ -60,8 +60,7 @@ endfunction
 " }
 
 " Auto Commands {
-" Open NERDTree
-autocmd vimenter * if !argc() | NERDTree | endif
+autocmd VimEnter * if !argc() | Explore | endif
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -78,12 +77,6 @@ autocmd FileType markdown setlocal wrap
 
 " add json syntax highlighting
 autocmd BufNewFile,BufRead *.json set ft=javascript
-
-" These prevent accidentally loading files while in the NERDTree panel
-autocmd FileType nerdtree noremap <buffer> <c-left> <nop>
-autocmd FileType nerdtree noremap <buffer> <c-h> <nop>
-autocmd FileType nerdtree noremap <buffer> <c-right> <nop>
-autocmd FileType nerdtree noremap <buffer> <c-l> <nop>
 
 autocmd FileType javascript noremap <buffer>  <c-x> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-x> :call HtmlBeautify()<cr>
@@ -107,6 +100,8 @@ command! Sudow w !sudo tee % > /dev/null 2>&1
 command! W w
 
 command! Q q
+
+command! E Explore
 " }
 
 " Settings {
@@ -460,6 +455,13 @@ let g:ale_linters = {
 
 " }
 map <leader>? :Maps<CR>
+
+" netrw {
+let g:netrw_banner       = 0
+let g:netrw_keepdir      = 0
+let g:netrw_liststyle    = 1 " or 3
+let g:netrw_sort_options = 'i'
+" }
 " }
 
 if filereadable($HOME.'/.vimrc_local')
