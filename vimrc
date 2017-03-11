@@ -440,9 +440,6 @@ nnoremap <silent> <f4> :if &guioptions=~'m' \| set guioptions-=m \| else \| set 
 " Toggle gundo
 nnoremap <F5> :GundoToggle<CR>
 
-" Toggle tagbar
-nnoremap <F6> :TagbarToggle<CR>
-
 " Move lines. http://vim.wikia.com/wiki/Moving_lines_up_or_down
 nnoremap ∆ :m .+1<CR>==
 nnoremap ˚ :m .-2<CR>==
