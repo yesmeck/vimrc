@@ -60,7 +60,7 @@ endfunction
 " }
 
 " Auto Commands {
-autocmd VimEnter * if !argc() | VimFilerExplorer | endif
+autocmd VimEnter * if !argc() | VimFilerExplorer -status | endif
 " Deletes trailing space in file upon write
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -205,16 +205,6 @@ set imcmdline
 " ---------
 let g:ctrlp_map = '<Leader>p'
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/bower_components/*,*/node_modules/*        " Linux/MacOSX
-
-" NERDTree
-" ----------
-let NERDTreeIgnore=['CVS', '\.swp$', '\.DS_Store']
-" setting root dir in NT also sets VIM's cd
-let NERDTreeChDirMode=2
-let NERDTreeShowHidden=1
-" single click to open directory
-let NERDTreeMouseMode = 2
-let NERDTreeRespectWildIgnore = 0
 
 " MiniBufExpl
 " ------------
@@ -393,12 +383,6 @@ nnoremap <Leader>gR :Gread<CR>
 nnoremap <Leader>gg :Git
 nnoremap <Leader>gd :Gdiff<CR>
 
-" Toggle NERD_tree
-noremap <silent> <F3> :NERDTreeToggle<CR>
-
-" Find file in NERT tree
-noremap <leader>f :NERDTreeFind<cr>
-
 " Clear search highlight
 nnoremap <C-l> :nohlsearch<cr>
 
@@ -468,6 +452,8 @@ call vimfiler#custom#profile('default', 'context', {
 
 let g:extra_whitespace_ignored_filetypes = ['vimfiler']
 let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
+" Find file in VimFiler
+noremap <leader>f :VimFilerExplorer -find -status<cr>
 " }
 
 if filereadable($HOME.'/.vimrc_local')
