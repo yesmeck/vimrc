@@ -467,6 +467,7 @@ call vimfiler#custom#profile('default', 'context', {
 " }
 
 let g:extra_whitespace_ignored_filetypes = ['vimfiler']
+let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
 " }
 
 if filereadable($HOME.'/.vimrc_local')
