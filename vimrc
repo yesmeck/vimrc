@@ -450,7 +450,6 @@ call vimfiler#custom#profile('default', 'context', {
       \ })
 " }
 
-let g:extra_whitespace_ignored_filetypes = ['vimfiler']
 let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
 " Find file in VimFiler
 noremap <leader>f :VimFilerExplorer -find -status<cr>
