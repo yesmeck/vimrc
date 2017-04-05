@@ -72,6 +72,8 @@ autocmd BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn} set ft=markdown
 
 autocmd BufRead,BufNewFile *.slim set ft=slim
 
+autocmd BufRead,BufNewFile *.axml set ft=xml
+
 " set wrap for markdown
 autocmd FileType markdown setlocal wrap
 
