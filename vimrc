@@ -457,6 +457,14 @@ let g:vimfiler_ignore_pattern = ['^\.git$', '^\.DS_Store$']
 noremap <leader>f :VimFilerExplorer -find -status<cr>
 " }
 
+" Neoformat {
+let g:neoformat_javascript_prettier = {
+            \ 'exe': 'prettier',
+            \ 'args': ['--stdin', '--single-quote', '--trailing-comma', 'es5'],
+            \ 'stdin': 1,
+            \ }
+" }
+
 if filereadable($HOME.'/.vimrc_local')
   source $HOME/.vimrc_local
 endif
