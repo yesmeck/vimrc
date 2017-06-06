@@ -74,6 +74,8 @@ autocmd BufRead,BufNewFile *.slim set ft=slim
 
 autocmd BufRead,BufNewFile *.axml set ft=xml
 
+autocmd BufRead,BufNewFile *.acss set ft=css
+
 " set wrap for markdown
 autocmd FileType markdown setlocal wrap
 
