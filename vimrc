@@ -205,11 +205,6 @@ set imcmdline
 " Plugin settings
 " ==================
 
-" CtrtlP
-" ---------
-let g:ctrlp_map = '<Leader>p'
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/bower_components/*,*/node_modules/*        " Linux/MacOSX
-
 " MiniBufExpl
 " ------------
 let g:miniBufExplUseSingleClick = 1
@@ -447,9 +442,11 @@ let g:ale_linters = {
 \}
 
 " fzf {
-
-" }
+map <leader>t :BTags<CR>
+map <leader>p :Files<CR>
+map <leader>b :Buffers<CR>
 map <leader>? :Maps<CR>
+" }
 
 " VimFiler {
 let g:vimfiler_as_default_explorer = 1
