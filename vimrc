@@ -374,6 +374,7 @@ nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " Ack
 noremap <leader>a :Ack
+let g:ackprg = 'ag --vimgrep'
 
 " Fugitive
 nnoremap <Leader>gs :Gstatus<CR>
