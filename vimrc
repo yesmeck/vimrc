@@ -447,6 +447,8 @@ map <leader>t :BTags<CR>
 map <leader>p :Files<CR>
 map <leader>b :Buffers<CR>
 map <leader>? :Maps<CR>
+" respect .gitignore
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 " }
 
 " VimFiler {
