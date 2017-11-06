@@ -82,10 +82,6 @@ autocmd FileType markdown setlocal wrap
 " add json syntax highlighting
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
-autocmd FileType javascript noremap <buffer>  <c-x> :call JsBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-x> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-x> :call CSSBeautify()<cr>
-
 autocmd FileType make setlocal noexpandtab
 
 if has("gui_running")
@@ -202,111 +198,9 @@ set errorbells
 
 set imcmdline
 
-if !has('nvim')
-  set ttymouse=xterm2
-  set pyxversion=3
-endif
-
 if exists(':tnoremap')
   tnoremap <Esc> <C-\><C-n>
 endif
-
-" Plugin settings
-" ==================
-
-" MiniBufExpl
-" ------------
-let g:miniBufExplUseSingleClick = 1
-
-" Deoplete
-" --------------
-let g:deoplete#enable_at_startup = 1
-
-" Neosnippet
-" -----------
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-let g:neosnippet#snippets_directory='~/.vim/snippets'
-
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
-
-" Enable snipMate compatibility feature.
-let g:neosnippet#enable_snipmate_compatibility = 1
-
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
-" Lightline
-" --------
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ]
-      \ },
-      \ 'component_expand': {
-      \   'gitbranch': 'fugitive#head'
-      \ },
-      \ 'component_type': {
-      \   'gitbranch': 'warning',
-      \ }
-      \ }
-
-" vim-easy-align
-" --------------
-" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
-vmap <Enter> <Plug>(EasyAlign)
-"
-" " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
-" vroom
-" -----
-" Use vimshell
-let g:vroom_use_vimshell = 1
-let g:vroom_test_unit_command = "rake test"
-let g:vroom_use_binstubs = 1
-
-" jsx
-" ---
-let g:jsx_ext_required = 0
-
-" Localvimrc
-" ----------
-let g:localvimrc_sandbox = 0
-let g:localvimrc_ask = 0
-" }
-
-" Keymaps {
-nnoremap <Leader>sv :source $MYVIMRC<CR>
-
-" Ack
-noremap <leader>a :Ack
-let g:ackprg = 'ag --vimgrep'
-
-" Fugitive
-nnoremap <Leader>gs :Gstatus<CR>
-nnoremap <Leader>gr :Gremove<CR>
-nnoremap <Leader>gl :Glog<CR>
-nnoremap <Leader>gb :Gblame<CR>
-nnoremap <Leader>gm :Gmove
-nnoremap <Leader>gp :Ggrep
-nnoremap <Leader>gR :Gread<CR>
-nnoremap <Leader>gg :Git
-nnoremap <Leader>gd :Gdiff<CR>
 
 " Clear search highlight
 nnoremap <C-l> :nohlsearch<cr>
@@ -314,6 +208,8 @@ nnoremap <C-l> :nohlsearch<cr>
 " Tab & Shift-Tab move between buffers
 noremap <silent> <Tab> :call BufferSwitch('next')<CR>
 noremap <silent> <S-Tab> :call BufferSwitch('prev')<CR>
+
+nnoremap <Leader>sv :source $MYVIMRC<CR>
 
 " Closes the current buffer
 nnoremap <silent> <Leader>q :Bclose<CR>
@@ -355,6 +251,82 @@ inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
 
+" Plugin settings
+" ==================
+
+" Fugitive
+nnoremap <Leader>gs :Gstatus<CR>
+nnoremap <Leader>gr :Gremove<CR>
+nnoremap <Leader>gl :Glog<CR>
+nnoremap <Leader>gb :Gblame<CR>
+nnoremap <Leader>gm :Gmove
+nnoremap <Leader>gp :Ggrep
+nnoremap <Leader>gR :Gread<CR>
+nnoremap <Leader>gg :Git
+nnoremap <Leader>gd :Gdiff<CR>
+
+" Ack
+noremap <leader>a :Ack
+let g:ackprg = 'ag --vimgrep'
+
+" Deoplete
+" --------------
+let g:deoplete#enable_at_startup = 1
+"
+" Neosnippet
+" -----------
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
+let g:neosnippet#snippets_directory='~/.vim/snippets'
+
+" SuperTab like snippets behavior.
+imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: pumvisible() ? "\<C-n>" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)"
+\: "\<TAB>"
+
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" For snippet_complete marker.
+if has('conceal')
+  set conceallevel=2 concealcursor=i
+endif
+
+
+" Lightline
+" --------
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'relativepath', 'modified' ] ]
+      \ },
+      \ 'component_expand': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
+      \ 'component_type': {
+      \   'gitbranch': 'warning',
+      \ }
+      \ }
+
+
+" jsx
+" ---
+let g:jsx_ext_required = 0
+
+" Localvimrc
+" ----------
+let g:localvimrc_sandbox = 0
+let g:localvimrc_ask = 0
+
 " ale
 let g:ale_echo_msg_format = '%linter%: %s'
 
@@ -392,10 +364,6 @@ let g:neoformat_javascript_prettier = {
             \ }
 " }
 
-if filereadable($HOME.'/.vimrc_local')
-  source $HOME/.vimrc_local
-endif
-
 " LanguageClient {
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-langserver'],
@@ -409,3 +377,7 @@ nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 " }
+
+if filereadable($HOME.'/.vimrc_local')
+  source $HOME/.vimrc_local
+endif
