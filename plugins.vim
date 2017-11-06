@@ -23,7 +23,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'itchyny/lightline.vim'
-Plug 'Shougo/neocomplete.vim'
 Plug 'honza/vim-snippets'
 Plug 'osyo-manga/vim-over'
 Plug 'AndrewRadev/vim-eco'
@@ -68,5 +67,13 @@ Plug 'Shougo/vimfiler.vim'
 Plug 'Shougo/unite.vim'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'
+Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc', { 'do': 'pip3 install neovim' }
+endif
 
 call plug#end()
