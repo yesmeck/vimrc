@@ -36,5 +36,6 @@ Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'tpope/vim-markdown'
 
 call plug#end()

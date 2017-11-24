@@ -363,3 +363,7 @@ let g:neoformat_javascript_prettier = {
 if filereadable($HOME.'/.vimrc_local')
   source $HOME/.vimrc_local
 endif
+
+" vim-markdown {
+let g:markdown_fenced_languages = ['jsx', 'css']
+" }
