@@ -263,7 +263,7 @@ nnoremap <Leader>gd :Gdiff<CR>
 
 " Ack
 noremap <leader>a :Ack
-let g:ackprg = 'ag --vimgrep'
+let g:ackprg = 'rg --vimgrep'
 
 " Deoplete
 " --------------
@@ -358,20 +358,6 @@ let g:neoformat_javascript_prettier = {
             \ 'args': ['--stdin', '--single-quote', '--trailing-comma', 'es5'],
             \ 'stdin': 1,
             \ }
-" }
-
-" LanguageClient {
-let g:LanguageClient_serverCommands = {
-    \ 'javascript': ['javascript-typescript-langserver'],
-    \ 'javascript.jsx': ['javascript-typescript-langserver'],
-    \ }
-
-" Automatically start language servers.
-let g:LanguageClient_autoStart = 1
-
-nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient_textDocument_rename()<CR>
 " }
 
 if filereadable($HOME.'/.vimrc_local')

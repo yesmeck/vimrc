@@ -35,7 +35,6 @@ Plug 'Shougo/unite.vim'
 Plug 'sbdchd/neoformat'
 Plug 'junegunn/goyo.vim'
 Plug 'vim-scripts/matchit.zip'
-Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
