@@ -367,3 +367,8 @@ endif
 " vim-markdown {
 let g:markdown_fenced_languages = ['jsx', 'css']
 " }
+"
+
+" Goyo {
+let g:goyo_width = 120
+" }
